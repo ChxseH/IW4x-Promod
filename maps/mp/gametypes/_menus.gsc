@@ -2,6 +2,7 @@
 
 init()
 {
+SetDvarIfUninitialized("scr_player_forceautoassign", true);
     if (!isDefined(game["gamestarted"]))
     {
         game["menu_team"] = "team_marinesopfor";
@@ -344,7 +345,12 @@ beginClassChoice(forceNewChoice)
 
 beginTeamChoice()
 {
-    self openpopupMenu(game["menu_team"]);
+	//Intricate - We put the auto assign where the actual team selection is. Also make sure that a mod isn't loaded, mainly to prevent bugs with them.
+	if( GetDvar("scr_player_forceautoassign"))
+		self notify("menuresponse", game["menu_team"], "autoassign");
+	else
+		self openpopupMenu( game["menu_team"] );
+	
 }
 
 showMainMenuForTeam()
