@@ -1,1 +1,21 @@
-main(){maps\mp\_load::main();maps\animated_models\foliage_palmtree_tall1::main();maps\animated_models\foliage_palmtree_bushy1::main();common_scripts\_destructible_types_anim_airconditioner::main();maps\mp\_compass::setupMiniMap("compass_map_mp_cross_fire");game["attackers"]="axis";game["defenders"]="allies";setdvar("compassmaxrange","2100");}
+main()
+{
+	maps\mp\_load::main();
+	
+	//maps\mp\mp_cross_fire_fx::main();
+	maps\mp\mp_cross_fire_precache::main();
+	
+	maps\createfx\mp_cross_fire_fx::main();
+	maps\createart\mp_cross_fire_art::main();
+	
+	maps\mp\_compass::setupMiniMap( "compass_map_mp_cross_fire" );
+	
+	//ambientPlay("ambient_trainer_ext2");
+	
+	game[ "attackers" ] = "axis";
+	game[ "defenders" ] = "allies";
+	
+	setdvar( "r_specularcolorscale", "4.5" );
+
+	setdvar( "compassmaxrange", "2100" );
+}
