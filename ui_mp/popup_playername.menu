@@ -30,11 +30,14 @@
                 onClose
                 {
                         setLocalVarBool ui_hideBack 1;
+						open main_background;
+						open main_text;
 						open pc_options_video;
                 }
                 onESC
                 {
-                        close self;
+						open main_background;
+						open main_text;
 						open pc_options_video;
                 }
                 focusColor 1 1 1 1
