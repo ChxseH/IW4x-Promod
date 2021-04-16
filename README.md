@@ -11,7 +11,6 @@ Notes:
 ```
 ./maps/mp/gametypes/_rank.gsc: self setClientDvar( "cg_objectiveText", "^1Promod\n^2chse.xyz/donate" );
 ./promod/_promod_util.gsc: [...] setDvarIfUninitialized("promod_hud_website","chse.xyz/donate"); [...]
-./ui_mp/auconfirm.menu: text "chse.xyz/donate"
 ```
 
 * Recommended server.cfg settings:

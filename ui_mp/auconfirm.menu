@@ -51,7 +51,7 @@
                 }
                 itemDef
                 {
-                        text "chse.xyz/donate"
+                        text ""
                         style 0
                         textscale .20
                         textstyle 3
