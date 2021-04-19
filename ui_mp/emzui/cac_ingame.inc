@@ -197,7 +197,7 @@
         LOCAL_WEAPON_ITEM( 2, "2. UMP45", "ump45" )\
         LOCAL_WEAPON_ITEM( 3, "3. Vector", "kriss" )\
 		LOCAL_WEAPON_ITEM( 4, "4. Mini-Uzi", "uzi" )\
-		LOCAL_WEAPON_ITEM( 5, "5. AK74-U", "ak74u" )\
+		LOCAL_WEAPON_ITEM( 5, "5. AK-74u", "ak74u" )\
     }\
     menuDef {\
         IMPROVED_POPUP_SETUP_ONOPEN( "ocd_popup_cac_demolitions", 9, (CHOICE_X( pos )), (CHOICE_Y( pos )-y_offset), ;, execnow "set "UI_FOCUSFIRST" spas12; set ui_inside_popup demolitions";, 0 )\
