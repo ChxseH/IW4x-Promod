@@ -101,7 +101,7 @@ onPlayerSpawned()
         self setClientDvar("sm_enable", "0");
         self setClientDvar("r_fullbright", "0");
         self setClientDvar("cg_newcolors", "0");
-		self setClientDvar( "cg_objectiveText", "^1Promod\n^2chse.xyz/donate" );
+		self setClientDvar( "cg_objectiveText", "^1Promod\n^2chse.dev/donate" );
         self waittill("spawned_player");
     }
 }

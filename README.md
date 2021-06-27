@@ -9,8 +9,8 @@ Notes:
 
 * There are ads in places, you *can* change them, but I'd appreciate if you left them;)
 ```
-./maps/mp/gametypes/_rank.gsc: self setClientDvar( "cg_objectiveText", "^1Promod\n^2chse.xyz/donate" );
-./promod/_promod_util.gsc: [...] setDvarIfUninitialized("promod_hud_website","chse.xyz/donate"); [...]
+./maps/mp/gametypes/_rank.gsc: self setClientDvar( "cg_objectiveText", "^1Promod\n^2chse.dev/donate" );
+./promod/_promod_util.gsc: [...] setDvarIfUninitialized("promod_hud_website","chse.dev/donate"); [...]
 ```
 
 * Recommended server.cfg settings:
@@ -25,6 +25,6 @@ set promod_allow_stratweapon "0" //gives weapons in strat time already, allows p
 set promod_allow_winningkc_match "1" //match mode only
 set promod_allow_winningkc "1"  //non-match modes
 set promod_allow_leaderdialog "1"  //leader saying "bomb planted/defused"
-set promod_hud_website "chse.xyz/donate"  //website shown in hud
+set promod_hud_website "chse.dev/donate"  //website shown in hud
 set promod_less_rotating "1" //won't rotate map if server is empty -> less server crashes
 ```
